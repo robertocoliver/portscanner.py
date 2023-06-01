@@ -18,7 +18,7 @@ class Scanner:
                 if result == 0:
                     print(f"[+] {self.port} open on {ip} ({hostname})")
                 else:
-                    print(f"[-] {self.port} false on {ip} ({hostname})")
+                    print(f"[-] {self.port} close {ip} ({hostname})")
         except socket.gaierror as e:
             print(f"Error resolving: {e}")
             return
